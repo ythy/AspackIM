@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <AutoCompleteTextView
+                android:id="@+id/et_user"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                style="@style/AIMEditText.zhuce"
+                android:hint="@string/zhuce_user"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"/>        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+       <EditText
+                android:id="@+id/et_password"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                style="@style/AIMEditText.zhuce"
+                android:inputType="textPassword"
+                android:hint="@string/zhuce_password"
+                android:maxLines="1"
+                android:singleLine="true" />       
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <EditText
+                android:id="@+id/con_password"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                style="@style/AIMEditText.zhuce"
+                android:inputType="textPassword"
+                android:hint="@string/zhuce_confirmpassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="0dp"
+            android:text="@string/register_re_password" />
+
+        <EditText
+            android:id="@+id/et_repassword"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+	
+     <Button
+            android:id="@+id/btn_register_confirm"
+            android:layout_width="274dp"
+            android:layout_height="33dp"
+            style="@style/AIMButton.confirmbtzhuce"
+            android:text="@string/register_btn"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"/>
+     
+</LinearLayout>

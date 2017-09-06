@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent">
+	
+    <LinearLayout 
+        android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+        android:orientation="vertical">
+   		
+        <fragment
+	        android:id="@+id/fragment_title"
+	        android:name="com.imc.aspackim.fragment.TitleFragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+	    </fragment>
+        
+        <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+	    <LinearLayout 
+	        android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        style="?android:attr/buttonBarStyle"
+	        android:background="@drawable/menustyles">
+	        
+	        <Button 
+	            android:layout_width="29dp"
+	            android:id="@+id/button_bar_message"
+	            style="@style/AIMButton.messagebutton"
+	             android:layout_weight="1"
+	            android:layout_height="@dimen/button_default_size"/>
+	        
+	        <Button android:layout_width="29dp"
+	            android:id="@+id/button_bar_friend"
+	            style="@style/AIMButton.contactbutton"
+	             android:layout_weight="1"
+	            android:layout_height="@dimen/button_default_size"/>
+	        
+	        <Button android:layout_width="29dp"
+	            android:id="@+id/button_bar_setup"
+	            style="@style/AIMButton.setupbutton"
+	            android:layout_weight="1"
+	            android:layout_height="@dimen/button_default_size"/>
+	        
+	    </LinearLayout>
+    
+    
+    </LinearLayout>   
+   
+    
+</RelativeLayout>
